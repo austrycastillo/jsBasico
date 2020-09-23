@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Funciones</title>
+
+</head>
+<body>
+<div id="caja" style="width: 50%;height: 200px; margin-left: 25%;border: 2px solid black;text-align: center;font-weight: bold;line-height: 200px">SEMÁFORO</div>
+<p style="text-align: center;">
+<button onclick="colores('green')"> Semáforo en verde </button><br><br>
+<button onclick="colores('yellow')"> Semáforo en amarillo </button><br><br>
+<button onclick="colores('red')"> Semáforo en rojo</button>
+</p>
+<script>
+function colores(color){
+document.getElementById('caja').innerHTML = color
+document.getElementById('caja').style.background = color
+document.getElementById('caja').style.fontWeight="bold"
+//alert('El color es ' + color)
+
+}
+</script>
+
+
+
+
+	
+</body>
+</html>
+
+
+
